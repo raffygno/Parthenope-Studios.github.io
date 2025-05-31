@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parthenope Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fff);
+      color: #2c3e50;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 260px;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #fff;
+      padding: 30px 20px;
+      box-shadow: 3px 0 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 20px 0;
+    }
+
+    .sidebar ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 12px;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #1abc9c;
+      color: #fff;
+      padding-left: 20px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 50px;
+      background: #f9fbfd;
+      overflow-y: auto;
+    }
+
+    section {
+      margin-bottom: 50px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 1.3em;
+      margin-top: 0;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .staff-grid {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .staff-card {
+      flex: 0 0 280px;
+      background: #ecf0f1;
+      border-radius: 10px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      scroll-snap-align: start;
+    }
+
+    .staff-member {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .site-footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/1HtbDx4-Ac2PY-yA4-ECW3Am4uEx5cOn8Qzn6Ci5x5-0/edit?tab=t.0">Regolamento</a></li>
+        <li><a href="candidature.html">Candidature Staff</a></li>
+        <li><a href="segnalazione.html">Segnalazione</a></li>
+        <li><a href="AppelliBan.html">Appello al ban</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Benvenuto su Parthenope Studios!</h1>
+
+      <section id="chi-siamo">
+        <h2>Chi siamo</h2>
+        <p>Siamo una community appassionata delle ferrovie. Abbiamo creato questo gioco su Roblox per far divertire la gente interpretando ruoli ispirati al mondo ferroviario.</p>
+        <p><strong>Nota:</strong> Il gioco non è RP, ma chi vuole può intraprendere azioni RP. È ispirato al <em>Trainspotting</em>!</p>
+      </section>
+
+      <section id="staff">
+        <h2>Staff</h2>
+		<p>Lo staff è una parte fondamentale della community, ecco chi siamo:</p>
+        <div class="staff-grid">
+          <div class="staff-card">
+            <h3>Owner</h3>
+            <div class="staff-member">
+              <img src="img/Gab.png" alt="Gabrix23" class="avatar">
+              <a href="https://www.roblox.com/users/163179708/profile" target="_blank">Gabrix23</a>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <h3>Head Admin</h3>
+            <div class="staff-member">
+              <img src="img/Zap.png" alt="ZaP_32" class="avatar">
+              <a href="https://www.roblox.com/users/1012000730/profile" target="_blank">ZaP_32</a>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <h3>Admin</h3>
+            <div class="staff-member"><img src="img/marco.png" class="avatar"><a href="https://www.roblox.com/users/29038659/profile">MARCOVIP</a></div>
+            <div class="staff-member"><img src="img/Gianfri.png" class="avatar"><a href="https://www.roblox.com/users/1474374823/profile">Gianfri910</a></div>
+            <div class="staff-member"><img src="img/Fast.png" class="avatar"><a href="https://www.roblox.com/users/1565203568/profile">Fastcar46ita</a></div>
+            <div class="staff-member"><img src="img/Helary.png" class="avatar"><a href="https://www.roblox.com/users/310696583/profile">LaHelary</a></div>
+            <div class="staff-member"><img src="img/Klyzo.png" class="avatar"><a href="https://www.roblox.com/users/620903028/profile">Kly_zo</a></div>
+            <div class="staff-member"><img src="img/ciocco.png" class="avatar"><a href="https://www.roblox.com/users/912027192/profile">cioccolata32</a></div>
+          </div>
+
+          <div class="staff-card">
+            <h3>Head Mod</h3>
+            <div class="staff-member">
+              <img src="img/diego.png" class="avatar">
+              <a href="https://www.roblox.com/users/2825664980/profile">464vivtr</a>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <h3>Moderazione</h3>
+            <div class="staff-member"><img src="img/Emaxer.png" class="avatar"><a href="https://www.roblox.com/users/2054339824/profile">Emaxer2006</a></div>
+            <div class="staff-member"><img src="img/riley.png" class="avatar"><a href="https://www.roblox.com/users/2228966261/profile">Not_Sofiquiz</a></div>
+            <div class="staff-member"><img src="img/legotrain.png" class="avatar"><a href="https://www.roblox.com/users/327043700/profile">legotrain03</a></div>
+            <div class="staff-member"><img src="img/cardo.png" class="avatar"><a href="https://www.roblox.com/users/326637234/profile">cardollx</a></div>
+            <div class="staff-member"><img src="img/anto.png" class="avatar"><a href="https://www.roblox.com/users/2391512525/profile">antogt67</a></div>
+            <div class="staff-member"><img src="img/emotive.png" class="avatar"><a href="https://www.roblox.com/users/301731037/profile">EmotiveCloudiest</a></div>
+            <div class="staff-member"><img src="img/booser.png" class="avatar"><a href="https://www.roblox.com/users/1319059783/profile">boooser04</a></div>
+            <div class="staff-member"><img src="img/Unome.png" class="avatar"><a href="https://www.roblox.com/users/3663824750/profile">Unomechesiste_pisk3</a></div>
+            <div class="staff-member"><img src="img/mario.png" class="avatar"><a href="https://www.roblox.com/users/120649723/profile">Mariolinolox</a></div>
+            <div class="staff-member"><img src="img/NICO.png" class="avatar"><a href="https://www.roblox.com/users/1101770533/profile">NICOLOGHI</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dove-ci-trovi">
+        <h2>Dove ci puoi trovare</h2>
+        <p>- <strong>Roblox:</strong> <a href="https://www.roblox.com/games/138215576520684/UPDATE-Italian-Railways">Gioco Roblox</a></p>
+        <p>- <strong>Gruppo:</strong> <a href="https://www.roblox.com/communities/35609758/Parthenope-Studios">Parthenope Studios</a></p>
+        <p>- <strong>TikTok:</strong> <a href="https://www.tiktok.com/search?q=Parthenope%20Studios&t=1748510186595">TikTok ufficiale</a></p>
+      </section>
+
+      <section id="discord">
+        <h2>Server Discord</h2>
+        <p>Unisciti a noi su Discord: <a href="https://discord.gg/7XTMqvPsph" target="_blank">Clicca qui</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Parthenope Studios. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+</html>
